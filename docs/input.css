@@ -4,11 +4,11 @@
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] bg-slate-100 opacity-90 backdrop-blur-md shadow-xs;
+  @apply fixed z-[9999] bg-slate-100 opacity-90 shadow-xs backdrop-blur-sm;
 }
 
 .hamburger-line {
-  @apply w-[30px] h-[2px] my-2 block bg-slate-800;
+  @apply my-2 block h-[2px] w-[30px] bg-slate-800;
 }
 
 .hamburger-active > span:nth-child(1) {
