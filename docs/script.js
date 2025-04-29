@@ -31,3 +31,24 @@ document.addEventListener("click", function (e) {
     navMenu.classList.add("hidden");
   }
 });
+
+// Dark mode toggle
+const darkToggle = document.querySelector("#dark-toggle");
+const html = document.querySelector("html");
+
+darkToggle.addEventListener("click", function () {
+  if (darkToggle.checked) {
+    html.classList.add("dark");
+    localStorage.theme = "dark";
+  } else {
+    html.classList.remove("dark");
+    localStorage.theme = "light";
+  }
+});
+
+// Pindahkan toggle sesuai mode
+if (localStorage.theme === "dark") {
+  darkToggle.checked = true;
+} else {
+  darkToggle.checked = false;
+}
